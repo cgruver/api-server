@@ -1,0 +1,9 @@
+quarkus:
+  application:
+    name: apiServer
+  http:
+    port: 4080
+  log:
+    level: "INFO"
+    console:
+      enable: true

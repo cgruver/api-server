@@ -18,10 +18,7 @@ public class ApiService implements ServerApi {
     public Response receiveMessage(MessageDto message) {
         
         LOG.info(message);
-        MessageDto response = new MessageDto();
-        response.setMessage("Hello To You!");
-        response.setMessageId(UUID.randomUUID());
+        MessageDto response = new MessageDto(UUID.randomUUID(), "Hello To You!");
         return(Response.ok(response).build());
-        
     }
 }

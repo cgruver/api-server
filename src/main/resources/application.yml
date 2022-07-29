@@ -2,7 +2,7 @@ quarkus:
   application:
     name: apiServer
   http:
-    port: 4080
+    port: ${SERVER_PORT}
   log:
     level: "INFO"
     console:
